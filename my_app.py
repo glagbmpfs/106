@@ -30,6 +30,12 @@ def initUI(self):
     self.hello_text.addWidget(self.layout)
     self.instruction.addWidget(self.layout)
     self.button.addWidget(self.layout)
+    
+def connects(self): 
+    self.btn_next.clicked.connect(self.next_click)
+def next_click(self):
+    self.hide()
+    self.tw = TestWin()
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (
        QApplication, QWidget,
